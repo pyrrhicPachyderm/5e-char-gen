@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<meta charset="UTF-8">
+
+<script type="text/javascript" src="manageCharacterLevel.js" ></script>
+
+<html>
+	<body style="background-color: rgb(255, 230, 205);">
+		<!--<canvas id="workspace" width="323" height="410"></canvas>
+		<button type="button" id="addStack" onclick="addStack()">Add current card to stack<br></button>
+		<canvas id="stack" width="323" height="410"></canvas>--->
+		
+		Character Level: <select id="characterLevelSelect" onchange="changeCharacterLevel()">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+		</select>
+		
+		<br><br>
+		
+		Ability Score Method: <select id="abilityScoreMethodSelect" onchange="changeAbilityScoreMethod()">
+			<option>Point Buy</option>
+			<option>Standard Array</option>
+			<option>Rolling/Other</option>
+		</select><br>
+		<form id="abilityScoreForm">
+			
+		</form>
+		
+		<br><br>
+		
+		<div id="characterLevelForms">
+			
+		</div>
+		
+		<script>
+			changeCharacterLevel();
+			
+			var abilityScoreMethodSelect = document.getElementById("abilityScoreMethodSelect");
+			
+			//resetWorkspace();
+			
+			//initPresets();
+			
+			//setInterval(drawWorkspace, 50);
+			function drawWorkspace(){
+				//drawCard(0, 0, IMAGE, false, typeForm.elements[0].value == "Captchalogue card", CODE);
+			}
+			
+		</script>
+	</body>
+</html>
